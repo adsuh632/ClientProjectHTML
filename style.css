@@ -46,11 +46,9 @@ a {
     color: #1a4fb4;
     text-decoration: underline;
     font-weight: bold;
-    transition: color 0.2s;
 }
 
 a:hover, a:focus {
-    color: #FFCB05;
     text-decoration: underline;
 }
 
