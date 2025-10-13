@@ -1,0 +1,303 @@
+/* Navigation Styles */
+/* linked in index.html */
+/* linked in <head> as <link rel="stylesheet" href="style.css"> */
+
+/*****************************************************************************
+/* restoration styling added by chatgpt version 5.0 */
+/* added html5reset.css after making styling edits -- had to add restoration styling 
+******************************************************************************/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Times, serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.75em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ul,
+ol {
+    padding-left: 40px;
+    list-style: disc;
+}
+
+a {
+    color: #1a4fb4;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+a:hover, a:focus {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* end of citedcode */
+
+/* skip to main styling */
+.skip {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 9999;
+    background: #FFCB05;
+    color: #00274C;
+    padding: 12px 0;
+}
+
+.skip:focus {
+    position: static;
+    left: auto;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    display: block;
+    text-align: center;
+    outline: 2px solid #00274C;
+    padding: 12px 20px;
+}
+
+nav {
+    background-color: #003366;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+    color: #003366;
+}
+
+/* Header h1 Styles */
+header {
+    background-color: transparent;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header h1 {
+    color: #2F65A7;
+    text-align: center;
+    margin: 30px 20px;
+    text-decoration: underline;
+    text-decoration-color: #FFCB05;
+}
+
+
+header img {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+main {
+    margin: 30px 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- START HERE GRID --- */
+
+/* Responsive grid for start-here and popular-resources */
+.start-here-grid,
+.popular-resources-grid {
+    display: flex;
+    gap: 36px;
+    max-width: 1100px;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.start-here-grid img {
+    width: 250px;
+    /* max-width: 520px; */
+    height: 200px;
+    border-radius: 15px;
+}
+
+.start-here-grid ul,
+.popular-resources-grid ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.05em;
+}
+
+.start-here-grid li,
+.popular-resources-grid li {
+    background: #f7f9fb;
+    border-left: 5px solid #FFCB05;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.start-here-grid li:hover,
+.popular-resources-grid li:hover {
+    background: #fff7cc;
+}
+
+.start-here-grid li a,
+.popular-resources-grid li a {
+    color: #2F65A7;
+    font-weight: bold;
+}
+
+.start-here-grid li a:hover,
+.popular-resources-grid li a:hover {
+    text-decoration: underline;
+}
+
+.data-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.data-content p {
+    flex: 1 1 0;
+    margin: 0 0 0 0;
+}
+
+.data-content ul {
+    flex: 1 1 0;
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+/* footer styling*/
+.brand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+
+}
+
+footer {
+    background-color: #00274C;
+    color: #FFCB05;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 80px;
+}
+
+footer a {
+    color: #FFCB05;
+}
+
+/* School of info and address */
+.footer--address {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/*icons*/
+/* Social media icon group smaller size */
+/* Social media icon group smaller size and centered */
+.social-media-icon-group {
+    margin-bottom: 20px;
+    fill: #FFCB05;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-media-icon-group .social-media-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* sublinks*/
+.footer-links a {
+    margin: 0 8px;
+    padding: 4px 0;
+    display: inline-block;
+}
