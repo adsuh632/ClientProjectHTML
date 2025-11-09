@@ -92,7 +92,7 @@
       </div>
     </section>
     <section id="connect">
-      <h2>Connect with the UMSI Career Development Office</h2>
+      <h2 class="connect">Connect with the UMSI Career Development Office</h2>
       <p>
         The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource
         guides. <a href="https://umich.instructure.com/courses/137916" target="_blank">Visit the CDO website</a> or <a
@@ -115,9 +115,12 @@
       <div class="l-3up--2">
 
         <div class="copyright-and-links">
-          © Copyright <span class="copyright-and-links--date">2025</span> Regents of the University of Michigan
+          <p>© Copyrights <span id="year"></span> by AshleySuh. All rights reserved.</p>
         </div>
-
+      <!-- updates the year using Javascript -->
+      <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
         <div class="footer--address">
           School of Information<br>
           University of Michigan<br>
@@ -127,10 +130,6 @@
       </div>
 
       <div class="l-3up--3">
-
-
-
-
         <div class="social-media-icon-group">
           <a href="https://twitter.com/umsi" class="social-media-icon" 
             title="University of Michigan School of Information X (opens in a new window)" target="_blank"

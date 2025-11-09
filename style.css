@@ -1,8 +1,7 @@
 /* Navigation Styles */
 /* linked in index.html */
 /* linked in <head> as <link rel="stylesheet" href="style.css"> */
-
-/*****************************************************************************
+/***************************************************************************
 /* restoration styling added by chatgpt version 5.0 */
 /* added html5reset.css after making styling edits -- added restoration styling 
 ******************************************************************************/
@@ -83,6 +82,10 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px; 
+}
+
+.options + p {
+    margin-top: 1.5rem; 
 }
 
 /* Specific utility: make certain images fill the content width and stay centered */
@@ -369,7 +372,7 @@ main section h2 {
 }
 @media (min-width: 1024px) {
     .interest-data {
-    grid-template-columns: repeat(2, 1fr); /* two equal columns and two rows */
+    grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
     align-items: start;
@@ -483,16 +486,20 @@ section > ul > li strong {
 }
 
 /* footer banner */
+.connect {
+    text-align: center;
+}
+
 #connect {
     background: linear-gradient(135deg, #00274C 0%, #2F65A7 100%);
     color: #ffffff;
-    padding: 2rem 3rem;
-    text-align: center;
+    padding: 3rem 4rem;
 }
 
 #connect h2 {
     color: #ffffff;
     font-weight: 600;
+    align-items: center;
 }
 
 #connect h2::after {
@@ -502,7 +509,8 @@ section > ul > li strong {
 }
 
 #connect p {
-    color: #fffffff2;
+    color: #F8F9FA;
+    text-align: center;
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
@@ -511,7 +519,7 @@ section > ul > li strong {
 #connect a {
     color: #FFCB05;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #connect a:hover {
@@ -568,3 +576,69 @@ footer a {
     padding: 4px 0;
     display: inline-block;
 }
+
+/* 404 Page Styles */
+.error-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 900;
+    margin: 0;
+    color: #2F65A7;
+    line-height: 1;
+    text-shadow: 4px 4px 0px #FFCB05;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.error-container .error-code {
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .error-container {
+        grid-template-columns: 240px 1fr; 
+        gap: 2rem;
+        text-align: left;
+        padding: 3.5rem 2rem;
+    }
+
+    .error-container .error-code {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .error-container .error-title,
+    .error-container .error-message {
+        align-self: center;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.error-title {
+    font-size: 2rem;
+    color: #00274C;
+    margin: 1.5rem 0 1rem;
+    font-weight: 700;
+}
+
+

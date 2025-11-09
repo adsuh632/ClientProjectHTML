@@ -122,7 +122,7 @@
         </div>
         <div class="l-3up--2">
           <div class="copyright-and-links">
-            © Copyright <span class="copyright-and-links--date">2025</span> Regents of the University of Michigan
+            <p>© Copyrights <span id="year"></span> by AshleySuh. All rights reserved.</p>
           </div>
           <div class="footer--address">
             School of Information<br>
@@ -161,6 +161,10 @@
         </div>
       </div>
     </footer>
+    <!-- updates the year using Javascript -->
+    <script>
+      document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
