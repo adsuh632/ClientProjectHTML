@@ -88,7 +88,6 @@ img {
     margin-top: 1.5rem; 
 }
 
-/* Specific utility: make certain images fill the content width and stay centered */
 .career-prep .options .data{
     display: block;
     width: 100%;
@@ -98,7 +97,6 @@ img {
     border-radius: 8px;
 }
 
-/* tables */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -112,8 +110,7 @@ td {
 }
 /************ end of citedcode **************/
 
-/* skip to main */
-/* appears when tab */
+/* skip to main - appears when tab */
 .skip {
     position: absolute;
     left: -9999px;
@@ -184,6 +181,16 @@ nav ul li a:focus {
     color: #FFCB05;
 }
 
+/* code taken from gpt-5 mini prompt: can you add a indicator styling */
+/* current page indicator */
+nav ul li a[aria-current="page"],
+nav ul li a.active {
+    text-decoration:underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+    color: #FFCB05; 
+}
+/* end of cited code */
 /* top banner */
 header img {
     display: block;
@@ -204,7 +211,7 @@ header h1 {
 }
 
 header h1::after {
-/**********cited from claude Sonnet 4.5*//* yelow gradient line under h1 *********************/ 
+/******cited from claude Sonnet 4.5*//* yelow gradient line under h1 ************/ 
     content: '';
     transform: translateX(-50%);
     background: linear-gradient(to right, transparent, #FFCB05, transparent);
